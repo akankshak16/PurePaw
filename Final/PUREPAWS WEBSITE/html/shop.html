@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PurePaws - Organic Pet Food</title>
+    <link rel="stylesheet" href="..//css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <h1>PurePaws</h1>
+        <nav class="topnav" id="myTopnav">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Help Center</a></li>
+          
+              <!-- Hamburger icon for mobile view -->
+              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+              </a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <section class="title">
+        <h2>Our Products</h2>
+        <div class="product">
+          <div class="product-img-wrapper">
+              <img src="https://akolungade.neocities.org/PurePaws_1/16772682704391_product-dry-dog-food.png" alt="Organic Dog Food">
+              <div class="overlay">High-quality organic food for your pets</div>
+          </div>
+          <h3>Organic Dog Food</h3>
+          <p>$29.99</p>
+          <button>Add to Cart</button>
+      </div>
+      <div class="product">
+          <div class="product-img-wrapper">
+              <img src="https://akolungade.neocities.org/PurePaws_1/Meow-Mix-Original-Choice-Dry-Cat-Food-30-Pounds_c6ce8dad-9f70-4368-a3a0-64d1c9730fd6.6e4cf26663f507ba903d633a8e44cb08%20(1).png" alt="Organic Cat Food">
+              <div class="overlay">Nutritional meals for your feline friends</div>
+          </div>
+          <h3>Organic Cat Food</h3>
+          <p>$24.99</p>
+          <button>Add to Cart</button>
+      </div>
+      <div class="product">
+          <div class="product-img-wrapper">
+              <img src="https://akolungade.neocities.org/PurePaws_1/5280254.png" alt="Organic Cat Food">
+              <div class="overlay">Delicious and healthy options for cats</div>
+          </div>
+          <h3>Organic Cat Food</h3>
+          <p>$24.99</p>
+          <button>Add to Cart</button>
+      </div>
+      <div class="product">
+          <div class="product-img-wrapper">
+              <img src="https://akolungade.neocities.org/PurePaws_1/Chicken_Duck_Cat_Front.png" alt="Organic Dog Food">
+              <div class="overlay">Premium food for your furry companions</div>
+          </div>
+          <h3>Organic Cat Food</h3>
+          <p>$24.99</p>
+          <button>Add to Cart</button>
+      </div>
+  </section>    
+
+    <section class="shop">
+        <h4>Shop Our Products</h4>
+      
+        <!-- New Table -->
+        <div class="shop-table-container">
+          <h3>Product Price Table</h3>
+          <table class="shop-table">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Stock Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Organic Dog Food</td>
+                <td>Pet Food</td>
+                <td>$24.99</td>
+                <td>In Stock</td>
+              </tr>
+              <tr>
+                <td>Eco-Friendly Cat Litter</td>
+                <td>Pet Supplies</td>
+                <td>$18.50</td>
+                <td>Out of Stock</td>
+              </tr>
+              <tr>
+                <td>Natural Dog Treats</td>
+                <td>Pet Snacks</td>
+                <td>$12.00</td>
+                <td>In Stock</td>
+              </tr>
+              <tr></tr>
+                <td>Natural Cat Treats</td>
+                <td>Pet Snacks</td>
+                <td>$12.00</td>
+                <td>In Stock</td>
+              </tr>
+              <tr>
+                <td>Cat Toys</td>
+                <td>Pet Toys</td>
+                <td>$12.00</td>
+                <td>In Stock</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      
+    <footer class="footer">
+        <p>&copy; 2024 PurePaws - All Rights Reserved</p>
+    </footer>
+
+    <script>
+      function myFunction() {
+      let x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive"; // Adds the responsive class to show the menu
+      } else {
+          x.className = "topnav"; // Resets to default class
+      }
+  }
+      </script>
+      
+</body>
+</html>

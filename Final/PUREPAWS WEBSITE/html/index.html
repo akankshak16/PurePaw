@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PurePaws - Organic Pet Food</title>
+    <link rel="stylesheet" href="..//css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>PurePaws</h1>
+        
+        <!-- Navigation with topnav for mobile responsiveness -->
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Help Center</a></li>
+            
+                <!-- Hamburger icon for mobile view -->
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-wrapper">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+    
+            <div class="carousel-slides">
+                <div class="carousel-slide">
+                    <img src="https://akolungade.neocities.org/PurePaws_1/Banner.png" alt="Happy pet">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://akolungade.neocities.org/PurePaws_1/Bannersecond.png" alt="Playful dog">
+                    <div class="carousel-caption">
+                        </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://akolungade.neocities.org/PurePaws_1/Banner3.png" alt="Relaxed pet">
+                    <div class="carousel-caption">
+                       </div>
+                </div>
+            </div>
+    
+            <div class="carousel-nav">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+        </div>
+    </section>    
+    
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <div class="product-img-wrapper">
+                <img src="https://akolungade.neocities.org/PurePaws_1/16772682704391_product-dry-dog-food.png" alt="Organic Dog Food">
+                <div class="overlay">High-quality organic food for your pets</div>
+            </div>
+            <h3>Organic Dog Food</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="product-img-wrapper">
+                <img src="https://akolungade.neocities.org/PurePaws_1/Meow-Mix-Original-Choice-Dry-Cat-Food-30-Pounds_c6ce8dad-9f70-4368-a3a0-64d1c9730fd6.6e4cf26663f507ba903d633a8e44cb08%20(1).png" alt="Organic Cat Food">
+                <div class="overlay">Nutritional meals for your feline friends</div>
+            </div>
+            <h3>Organic Cat Food</h3>
+            <p>$24.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="product-img-wrapper">
+                <img src="https://akolungade.neocities.org/PurePaws_1/5280254.png" alt="Organic Cat Food">
+                <div class="overlay">Delicious and healthy options for cats</div>
+            </div>
+            <h3>Organic Cat Food</h3>
+            <p>$24.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="product-img-wrapper">
+                <img src="https://akolungade.neocities.org/PurePaws_1/Chicken_Duck_Cat_Front.png" alt="Organic Dog Food">
+                <div class="overlay">Premium food for your furry companions</div>
+            </div>
+            <h3>Organic Cat Food</h3>
+            <p>$24.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>    
+    
+
+    <section class="sustainability">
+        <h2>Our Commitment to Sustainability</h2>
+        <div class="sustainability-content">
+            <div class="sustainability-text">
+                <p>At PurePaws, we believe in providing food that’s not only healthy for your pets but also respectful to our planet. Our products are crafted with organic ingredients, sustainably sourced, and packaged in eco-friendly materials. Join us in our journey to nourish pets naturally and responsibly.</p>
+                <ul>
+                    <li>100% Organic Ingredients</li>
+                    <li>Eco-Friendly Packaging</li>
+                    <li>Transparent Sourcing Practices</li>
+                    <li>Support for Sustainable Farms</li>
+                </ul>
+                <a href="#learn-more" class="sustainability-button">Learn More</a>
+            </div>
+            <div class="sustainability-image">
+                <img src="https://akolungade.neocities.org/PurePaws_1/16772682704391_product-dry-dog-food.png" alt="Sustainable packaging" />
+            </div>
+        </div>
+    </section>
+        
+    <footer class="footer">
+        <p>&copy; 2024 PurePaws - All Rights Reserved</p>
+    </footer>
+
+    <script>
+		function myFunction() {
+    let x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive"; // Adds the responsive class to show the menu
+    } else {
+        x.className = "topnav"; // Resets to default class
+    }
+}
+		</script>
+
+</body>
+</html>

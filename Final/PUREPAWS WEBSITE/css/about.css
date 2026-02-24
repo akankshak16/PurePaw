@@ -1,0 +1,362 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #1E2019;
+    background-color: #f5f4ff;
+}
+
+h1, h2, h3, p { 
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #33295c;
+    color: #FFFFFF;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Makes the header fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center; /* Centers the navbar items */
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover {
+    color: #BDA9D8;
+}
+
+/* Footer */
+.footer {
+    background-color: #1E2019;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    background-color: #f5f4ff; /* Light purple background */
+    color: #1E2019;
+}
+
+.image-gallery {
+    padding: 10px;       /* Remove padding */
+    margin: 0;        /* Remove margin */
+    display: grid;    /* Use grid layout for the gallery */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Automatically adjust the number of columns based on screen size */
+    gap: 100px;        /* Space between images */
+}
+
+.image-gallery li {
+    display:flex;    /* Center images inside the list item */
+    justify-content: center;  /* Horizontally center images */
+    align-items: center;     /* Vertically center images */
+}
+
+.image-gallery img {
+    width: 100%;      /* Make images responsive */
+    height: 100%;     /* Maintain aspect ratio */
+    display: block;   /* Remove space below the images */
+}
+
+
+@media screen and (max-width: 700px) {
+    .image-list li {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+}
+
+.about h2, .about h3 {
+    color: #41337A;
+    margin-bottom: 1rem;
+}
+
+.about p, .about ul {
+    font-size: 1rem;
+    margin: 1rem auto;
+    line-height: 1.6;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.team-section {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+blockquote {
+    border-left: 3px solid #ddd;
+    padding-left: 10px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Header and Navigation */
+.header h1 {
+    animation: fadeInDown 1s ease-out;
+}
+
+.header nav ul li a {
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #ff6f61; /* Customize the hover color */
+}
+
+/* Header Icons Hover Animation */
+.header-icons .icon {
+    transition: transform 0.3s ease;
+}
+
+.header-icons .icon:hover {
+    transform: scale(1.2); /* Enlarge icons on hover */
+}
+
+/* Footer Text Fade Animation */
+.footer p {
+    animation: fadeInUp 1.5s ease-in;
+}
+
+/* Animation for Slide-in from the Right */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Hamburger Menu */
+.topnav {
+    overflow: hidden;
+    background-color: #33295c;
+}
+
+.topnav ul li a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav ul {
+    display: flex;
+    flex-direction: row; /* Default (horizontal layout) */
+}
+
+.topnav ul li a:hover {
+    color: black;
+}
+.active {
+	background-color: #4CAF50;
+	color: white}
+
+.topnav .icon {
+	display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive nav menu when clicked */
+@media screen and (max-width: 1000px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive ul li a {
+        display: block;
+        text-align: left;
+        float: none;
+        /* width: 100%; Ensure full width for links when in mobile view */
+    }
+    .topnav.responsive .icon {
+        position: relative;
+        right: 30px; /* Adjust to position the icon correctly */
+        top: 10px;
+        display: block;
+    }
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1000px) {
+    .topnav ul li a{
+      display: none;  /* Hide menu items by default */
+      width: 100%;
+      flex-direction: column;  /* Stack items vertically */
+    }
+  
+    .topnav.responsive ul li a {
+      display: block;  /* Show menu when toggled */
+    }
+
+    .topnav.responsive ul {
+        flex-direction: column;
+    }
+    
+    .topnav ul li.icon {
+        display: block; /* Ensure the hamburger icon stays visible */
+    }
+
+    .topnav ul li a.icon {
+      display: block;  /* Show hamburger icon */
+      cursor: pointer;
+      font-size: 30px;
+      padding: 10px;
+      position:relative;
+      right: 30px;
+    }
+  }
+
+  #container {
+    display: flex;
+    gap: 10px;
+}
+
+.flip-container {
+    margin: 50px;
+    height: 400px;
+    width: 400px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.flip-container:hover {
+    transform: rotateY(-90deg);
+}
+
+.flip-content {
+    position: absolute;
+    height: 360px;
+    width: 360px;
+    font-size: large;
+    border: solid 1px #ccc;
+    backface-visibility: hidden;
+}
+
+.flip-content.one {
+    -webkit-transform: translateZ(200px);
+    transform: translateZ(200px);
+    background-size: cover;
+    background-position: center;
+}
+
+.flip-content.two {
+    -webkit-transform: rotateY(90deg) translateZ(200px);
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+p#front, p#back {
+    margin: 50px;
+    padding: 10px;
+}
+
+p#front {
+    padding: 20px;
+    margin: 50px;
+}
+
+p#back {
+    background-color: rgb(220, 207, 255);
+    margin: 50px;
+}   
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: auto; /* Remove fixed height */
+}
+
+#banner img {
+    width: 100%; /* Ensure the image spans the full width */
+    height: 600px; /* Maintain aspect ratio */
+    object-fit: cover; /* Keep the image filling the area */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+.video-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 2px solid #7964b8;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+}
+
+video {
+    width: 800px;
+    height: 400px;
+}

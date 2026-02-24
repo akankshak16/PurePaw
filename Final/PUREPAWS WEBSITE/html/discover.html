@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PurePaws - Organic Pet Food</title>
+    <link rel="stylesheet" href="..//css/discover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>PurePaws</h1>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Help Center</a></li>
+            
+                <!-- Hamburger icon for mobile view -->
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Discover the Best for Your Pet</h1>
+            <p>Explore our resources to keep your pet happy and healthy with organic solutions.</p>
+            <div class="slideshow-container">
+                <img src="https://akolungade.neocities.org/PurePaws_1/happy-pet-dogs-playing-grass.jpg" alt="Happy pet playing in a green field" class="slideshow-image"                    >
+                <img src="https://akolungade.neocities.org/PurePaws_1/heartwarming-moment-between-dog-cat-600nw-2432338827.webp" alt="Dog with organic food" class="slideshow-image">
+                <img src="https://akolungade.neocities.org/PurePaws_1/360_F_702027365_N5wXHqJSLzq2eDjfQ8VAb5OL3witfE7u.jpg" alt="Cat enjoying grass" class="slideshow-image">
+                <img src="https://akolungade.neocities.org/PurePaws_1/photo-1662261728536-910777a82ce4.jpeg" alt="Pet health treats" class="slideshow-image">
+            </div>
+        </section>
+        
+        <section class="featured-articles">
+            <h2>Featured Articles & Blogs</h2>
+            <div class="article-grid">
+                <article>
+                    <div class="image-wrapper">
+                        <img src="https://akolungade.neocities.org/PurePaws_1/still-life-pet-food-composition.jpg" alt="Bowl of organic pet food" class="article-image">
+                        <div class="text-overlay">
+                            <h3>Why Organic Pet Food Matters</h3>
+                            <p>Learn about the benefits of feeding your pet organic food and how it impacts their health.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+                <article>
+                    <div class="image-wrapper">
+                        <img src="https://akolungade.neocities.org/PurePaws_1/healthy-fresh-pet-food-ingredients-dark-surface.jpg" alt="Organic chicken for pet nutrition" class="article-image">
+                        <div class="text-overlay">
+                            <h3>Ingredient Spotlight: Organic Chicken</h3>
+                            <p>Explore why organic chicken is a top choice for your pet's nutrition.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+            </div>
+        </section>
+           
+        
+        <section class="collapsible-section">
+            <input type="checkbox" id="toggle-tips" class="toggle-input">
+            <label for="toggle-tips" class="collapsible-label">Pet Wellness Tips & Tricks</label>
+            <div class="content">
+                <p>Keeping your furry companion happy and healthy is a continuous journey that involves attention to their nutrition, activity, mental stimulation, and overall well-being. With PurePaws, we’re dedicated to providing helpful advice, practical tips, and insightful tricks to ensure your pet thrives every single day. From understanding the best ways to transition your pet to organic diets to finding creative ways to keep their minds engaged, our wellness resources cover a wide range of topics. You’ll find nutritional guidelines, exercise routines, grooming best practices, and seasonal care advice tailored to different types of pets and lifestyles. Our goal is to help you give your beloved animal the care they deserve, making every day with them truly special.</p>
+            </div>
+        </section>
+        
+        <section class="collapsible-section">
+            <input type="checkbox" id="toggle-stories" class="toggle-input">
+            <label for="toggle-stories" class="collapsible-label">Customer Stories</label>
+            <div class="content">
+                <div class="story">
+                    <h3>Max's Journey to Health</h3>
+                    <p>Meet Max, a playful golden retriever who faced significant health challenges, including digestive sensitivities and low energy levels. Max’s journey to health began with a switch to PurePaws' organic pet food, specifically tailored to provide high-quality, natural ingredients that address common pet health concerns. Within weeks, Max’s owner noticed significant changes: improved digestion, a shinier coat, and a visible boost in energy. Over time, Max transformed into a vibrant, energetic, and happy dog who loves playtime and long walks. PurePaws is proud to be part of Max’s journey to wellness and grateful to share his inspiring story with our community. His story serves as a testament to the life-changing impact of proper nutrition and dedicated care.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2024 PurePaws - All Rights Reserved</p>
+    </footer>
+
+    <script>
+		function myFunction() {
+    let x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive"; // Adds the responsive class to show the menu
+    } else {
+        x.className = "topnav"; // Resets to default class
+    }
+}
+		</script>
+        
+</body>
+</html>

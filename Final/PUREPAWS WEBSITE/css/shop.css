@@ -1,0 +1,499 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #1E2019;
+    background-color: #FFFFFF;
+}
+
+h1, h2, h3, p { 
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #33295c;
+    color: #FFFFFF;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Makes the header fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center; /* Centers the navbar items */
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover {
+    color: #BDA9D8;
+}
+
+/* Products Section */
+.products {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f5f4ff; /* Soft background */
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    color: #41337A;
+    margin-bottom: 2rem;
+}
+
+.product {
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #f5efff;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px); /* Hover effect to lift card */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.product h3 {
+    color: #1E2019;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.product p {
+    color: #FF6726;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.5rem 0 1rem;
+}
+
+.product button {
+    background-color: #FF6726;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #41337A;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #1E2019;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.title
+{margin-top: 100px;
+    font-size: large;
+    padding: 1rem;
+    text-align: center;
+    background-color: #FFFFFF;}
+
+/* Shop Section */
+.shop {
+    margin-top: 10px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+
+.shop h2 {
+    font-size: 2.5rem;
+    color: #41337A;
+    margin-bottom: 0.5rem;
+}
+
+.shop .product {
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #f5efff;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.)
+}
+
+/* Header and Navigation */
+.header h1 {
+    animation: fadeInDown 1s ease-out;
+}
+
+.header nav ul li a {
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #ff6f61; /* Customize the hover color */
+}
+
+/* Banner Image Animation and Transition */
+.banner-image img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.banner-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    opacity: 0.9;
+}
+
+/* Product Image Hover Animation */
+.product img {
+    transition: transform 0.4s ease;
+}
+
+.product img:hover {
+    transform: scale(1.08); /* Slight zoom */
+}
+
+/* Fade-in Animation for Sections */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner-content, .products, .sustainability {
+    animation: fadeInUp 1s ease-in;
+}
+
+/* Header Icons Hover Animation */
+.header-icons .icon {
+    transition: transform 0.3s ease;
+}
+
+.header-icons .icon:hover {
+    transform: scale(1.2); /* Enlarge icons on hover */
+}
+
+/* Fade-in Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Text Fade Animation */
+.footer p {
+    animation: fadeInUp 1.5s ease-in;
+}
+
+.shop h4{
+    font-size: 25px;
+    margin-top: 0;
+}
+.shop-table-container {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .shop-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .shop-table th, .shop-table td {
+    border: 1px solid #f5efff;
+    padding: 0.8rem;
+    text-align: left;
+  }
+  
+  .shop-table th {
+    background-color: #41337A;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  
+  .shop-table tr:nth-child(even) {
+    background-color: #f5f4ff; /* Light purple background for alternate rows */
+  }
+  
+  .shop-table tr:hover {
+    background-color: #FF6726;
+    color: #FFFFFF;
+    transition: background-color 0.3s;
+  }
+  
+/* Hamburger Menu */
+.topnav {
+    overflow: hidden;
+    background-color: #33295c;
+}
+
+.topnav ul li a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav ul {
+    display: flex;
+    flex-direction: row; /* Default (horizontal layout) */
+}
+
+.topnav ul li a:hover {
+    color: black;
+}
+.active {
+	background-color: #4CAF50;
+	color: white}
+
+/* .topnav .icon {
+    display: block;
+    color: white;
+    background-color: #33295c;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 30px;
+} */
+.topnav .icon {
+	display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* @media screen and (max-width: 1000px) {
+	.topnav ul li a:not(:first-child) 
+    {display: none;}
+	.topnav ul li a.icon {
+		float: right;
+		display: block;
+	}
+} */
+
+/* Responsive nav menu when clicked */
+@media screen and (max-width: 1000px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive ul li a {
+        display: block;
+        text-align: left;
+        float: none;
+        /* width: 100%; Ensure full width for links when in mobile view */
+    }
+    .topnav.responsive .icon {
+        position: relative;
+        right: 30px; /* Adjust to position the icon correctly */
+        top: 10px;
+        display: block;
+    }
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1000px) {
+    .topnav ul li a{
+      display: none;  /* Hide menu items by default */
+      width: 100%;
+      flex-direction: column;  /* Stack items vertically */
+    }
+  
+    .topnav.responsive ul li a {
+      display: block;  /* Show menu when toggled */
+    }
+
+    .topnav.responsive ul {
+        flex-direction: column;
+    }
+    
+    .topnav ul li.icon {
+        display: block; /* Ensure the hamburger icon stays visible */
+    }
+
+    .topnav ul li a.icon {
+      display: block;  /* Show hamburger icon */
+      cursor: pointer;
+      font-size: 30px;
+      padding: 10px;
+      position:relative;
+      right: 30px;
+    }
+  }
+
+
+  .product {
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #f5efff;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures nothing spills out */
+}
+
+.product-img-wrapper {
+    position: relative;
+    overflow: hidden; /* Ensure the overlay stays within the image bounds */
+    border-radius: 8px; /* Match the border-radius of the image */
+}
+
+.product-img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+.product-img-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 8, 57, 0.6); /* Semi-transparent black background */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    border-radius: 8px; /* Match the border-radius of the image */
+}
+
+.product-img-wrapper:hover .overlay {
+    opacity: 1; /* Show the text overlay on hover */
+}
+
+.product-img-wrapper:hover img {
+    transform: scale(1.1); /* Slight zoom effect on the image */
+}
+
+.products {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f5f4ff;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    color: #41337A;
+    margin-bottom: 2rem;
+}
+
+.product {
+    display: inline-block;
+    background-color: #FFFFFF;
+    border: 1px solid #f5efff;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.product h3 {
+    color: #1E2019;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.product p {
+    color: #FF6726;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.5rem 0 1rem;
+}
+
+.product button {
+    background-color: #FF6726;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px); /* Slight upward movement */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow effect */
+}
+
+.product:hover img {
+    transform: scale(1.1); /* Slight zoom-in effect on image */
+}
+
+.product button:hover {
+    background-color: #41337A; /* Change button color on hover */
+}
